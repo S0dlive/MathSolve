@@ -28,6 +28,16 @@ namespace MathSolve.Theorems
             return scote * scote + cote * cote;
         }
 
-        
+        public static int ShearCote(int hypotenuse , int cote)
+        {
+            if (hypotenuse < cote)
+            {
+                throw new Exeption.IsNotHypotenuseException(hypotenuse);
+            }
+            else
+            {
+                return hypotenuse * hypotenuse - cote * cote;
+            }
+        }
     }
 }
