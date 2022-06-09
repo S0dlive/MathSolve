@@ -69,6 +69,8 @@ _ReSharper*/
 # Click-Once directory
 publish/
 
+*.csproj
+
 # Publish Web Output
 *.Publish.xml
 *.pubxml
