@@ -13,8 +13,6 @@ namespace MathSolve.Theorems
             int scote ,
             int cote)
         {
-
-            
             if (hypo * hypo == scote * scote + cote * cote)
             {
                 return true;
@@ -25,17 +23,11 @@ namespace MathSolve.Theorems
             }
         }
 
-        public static int ShearHypotenuse(this int hypo , int scote , int cote)
+        public static int ShearHypotenuse(int scote , int cote)
         {
-            if (scote * scote + cote * cote == hypo * hypo)
-            {
-                return hypo*hypo;
-            }
-            else
-            {
-                return 0;
-            }
+            return scote * scote + cote * cote;
         }
 
+        
     }
 }
