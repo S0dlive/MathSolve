@@ -19,6 +19,6 @@ namespace MathSolve.Equation
                 return false;
         }
 
-
+        
     }
 }
